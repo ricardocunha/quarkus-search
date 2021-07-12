@@ -6,7 +6,6 @@ Characteristics:
 * Easy to Scale (Distributed)
 * RESTful API
 * Build on top of Apache Lucene
-* Multi-tenancy
 * Support for advanced search features (Full Text)
 * Per-operation Persistence
 
@@ -14,8 +13,18 @@ Core-Concepts:
 * Cluster
 * Node
 * Index
+* Type
+* Document
+* Field
 
-###Search-Request:
+### Use Cases
+* Search
+* Data Aggregation/Visualization
+* Analytics
+* Autocompletion
+* Multi-Tenancy 
+
+### Search-Request:
 ![plot](src/main/resources/images/search.png)
 
 ## How this applications works
@@ -23,6 +32,13 @@ Core-Concepts:
 ![plot](src/main/resources/images/elastic.png)
 
 * All the searches hit only ElasticSearch
+
+### Tools used:
+* Quarkus
+* Hibernate-Search
+* Panache
+* Postgres
+
 
 ## Data models explained
 
